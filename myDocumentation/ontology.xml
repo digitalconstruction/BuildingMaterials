@@ -1,0 +1,1263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/digitalconstruction/BuildingMaterials#"
+     xml:base="https://w3id.org/digitalconstruction/BuildingMaterials"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials">
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:creator>Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)</terms:creator>
+        <terms:creator>Prathap Valluru (prathap.valluru@tu-dresden.de)</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Building Material Ontology defining the main concepts of building material, type and its properties. This ontology developed by taking advantage of Ontology Property Management (OPM) concepts.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-10T16:00:00</terms:issued>
+        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Digital Construction - BuildingMaterials</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">BMO</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&lt;https://w3id.org/digitalconstruction/BuildingMaterials#&gt;</vann:preferredNamespaceUri>
+        <rdfs:label>Digital construction - BuildingMaterials</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/digitalconstruction"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#IsInnerLayerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#IsInnerLayerOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#IsOuterLayerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#IsOuterLayerOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#adjacentLayer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#adjacentLayer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasAcidityConcentration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasAcidityConcentration">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"/>
+        <rdfs:comment>Maximum CaCO3 equivalent that would neutralize the acid.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasAlkalinityConcentration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasAlkalinityConcentration">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"/>
+        <rdfs:comment>Maximum alkalinity concentration (maximum sum of concentrations of each of the negative ions substances measured as CaCO3).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasBoilingPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasBoilingPoint">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasCO2Content -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasCO2Content">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasCOContent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasCOContent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasCarbonContent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasCarbonContent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"/>
+        <rdfs:comment>The carbon content in the fuel. This is measured in weight of carbon per unit weight of fuel and is therefore unitless. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasCombustionTemperature -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasCombustionTemperature">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"/>
+        <rdfs:comment>Combustion temperature of the material when air is at 298 K and 100 kPa. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasConstituents -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasConstituents">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#ConstituentSet"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Constituent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasDynamicViscosity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasDynamicViscosity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"/>
+        <rdfs:comment>A measure of the viscous resistance of the material. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasFreezingPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasFreezingPoint">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasGasPressure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasGasPressure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasHardness -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasHardness">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"/>
+        <rdfs:comment>Water hardness as positive, multivalent ion concentration in the water (usually concentrations of calcium and magnesium ions in terms of calcium carbonate).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasHigherHeatingValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasHigherHeatingValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"/>
+        <rdfs:comment>Higher Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in liquid form in the combustion products. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasIsothermalMoistureCapacity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasIsothermalMoistureCapacity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"/>
+        <rdfs:comment>Based on water vapor density. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasLayers -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasLayers">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#LayerSet"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasLowerHeatingValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasLowerHeatingValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"/>
+        <rdfs:comment>Lower Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in vapor form in the combustion products. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasLowerVaporResistanceFactor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasLowerVaporResistanceFactor">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"/>
+        <rdfs:comment>The vapor permeability relationship of air/material (typically value &gt; 1), measured in low relative humidity (typically in 0/50 % RH). [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMassDensity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMassDensity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"/>
+        <rdfs:comment>Material mass density. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMaterial">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMaterialName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMaterialName">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+        <rdfs:comment>It will assign the material name(material type) to the material</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMoistureCapacityThermalGradient -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMoistureCapacityThermalGradient">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Thermal gradient coefficient for moisture capacity. Based on water vapor density.[ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMoistureDiffusivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMoistureDiffusivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"/>
+        <rdfs:comment>Moisture diffusivity is a transport property that is frequently used in the hygrothermal analysis of building envelope components.
+Moisture diffusivity is a transport property that is frequently used in the hygrothermal analysis of building envelope components. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMolecularWeight -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMolecularWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasN20Content -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasN20Content">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasPHLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasPHLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"/>
+        <rdfs:comment>Maximum water PH in a range from 0-14.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasPoissonRatio -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasPoissonRatio">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"/>
+        <rdfs:comment>A measure of the lateral deformations in the elastic range. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasPorosity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasPorosity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasProfiles -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasProfiles">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#ProfileSet"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasShearModulus -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasShearModulus">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"/>
+        <rdfs:comment>A measure of the shear modulus of elasticity of the material. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceBack -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceBack">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Reflectance at normal incidence (solar): back side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the &quot;back&quot; side of the other material, perpendicular to the surface. Dependent on material and surface characteristics. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceFront -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceFront">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Reflectance at normal incidence (solar): front side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the &quot;front&quot; side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.[ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarRefractionIndex -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarRefractionIndex">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Index of refraction (solar) defines the &quot;bending&quot; of the solar ray when it passes from one medium into another. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarTransmittance -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarTransmittance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Transmittance at normal incidence (solar). Defines the fraction of solar radiation that passes through per unit area, perpendicular to the surface. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatCapacity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatCapacity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatTemperatureDerivative -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatTemperatureDerivative">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Specific heat temperature derivative. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalCapacity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalCapacity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivityTemperatureDerivative -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivityTemperatureDerivative">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Thermal conductivity temperature derivative. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalExpansionCoefficient -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalExpansionCoefficient">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"/>
+        <rdfs:comment>A measure of the expansion coefficient for warming up the material about one Kelvin. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityBack -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityBack">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Thermal IR emissivity: back side. Defines the fraction of thermal energy emitted per unit area to &quot;blackbody&quot; at the same temperature, through the &quot;back&quot; side of the material. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityFront -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityFront">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Thermal IR emissivity: front side. Defines the fraction of thermal energy emitted per unit area to &quot;blackbody&quot; at the same temperature, through the &quot;front&quot; side of the material.[ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrTransmittance -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrTransmittance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Thermal IR transmittance at normal incidence. Defines the fraction of thermal energy that passes through per unit area, perpendicular to the surface. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalResistivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalResistivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:comment>It is used to assign the unit to the property</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasUpperVaporResistanceFactor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasUpperVaporResistanceFactor">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"/>
+        <rdfs:comment>The vapor permeability relationship of air/material (typically value &gt; 1), measured in high relative humidity (typically in 95/50 % RH). [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasVaporPermeability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasVaporPermeability">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"/>
+        <rdfs:comment>The rate of water vapor transmission per unit area per unit of vapor pressure differential under test conditions. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasViscosityTemperatureDerivative -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasViscosityTemperatureDerivative">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Viscosity temperature derivative. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceBack -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceBack">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Reflectance at normal incidence (visible): back side. Defines the fraction of the solar ray in the visible spectrum that is reflected and not transmitted when the ray passes from one medium into another, at the &quot;back&quot; side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.[ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceFront -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceFront">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Reflectance at normal incidence (visible): front side. Defines the fraction of the solar ray in the visible spectrum that is reflected and not transmitted when the ray passes from one medium into another, at the &quot;front&quot; side of the other material, perpendicular to the surface. Dependent on material and surface characteristics.[ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleRefractionIndex -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleRefractionIndex">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"/>
+        <rdfs:comment>Index of refraction (visible) defines the &quot;bending&quot; of the sola! r ray in the visible spectrum when it passes from one medium into another. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleTransmittance -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleTransmittance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"/>
+        <rdfs:comment>Transmittance at normal incidence (visible). Defines the fraction of the visible spectrum of solar radiation that passes through per unit area, perpendicular to the surface. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasYoungModulus -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasYoungModulus">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/opm#hasProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"/>
+        <rdfs:comment>A measure of the Young&apos;s modulus of elasticity of the material. [ISO 16739-1:2018]</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/opm#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/opm#hasProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasDefinedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasDefinedValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Defined value is the standard value taken from the authenticated sources. For example, it is a value taken from the standards.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasEstimatedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasEstimatedValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Estimated value is the derived value or calculated value by using other property values</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasMeasuredValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMeasuredValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Measured Value is the resulted value from the measurement process</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasReference -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasReference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#hasValue"/>
+        <rdfs:comment>hasRefrence: is used to represent the relation between property and the source from where it is taken.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasThickness -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasThickness">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Constituent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Constituent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#ConstituentSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#ConstituentSet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Layer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Layer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#LayerSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#LayerSet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Material -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material">
+        <rdfs:comment>a homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). [ISO 16739]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/opm#Property"/>
+        <rdfs:comment>It is a characterstic of a material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType">
+        <rdfs:comment>It represents the different types of a material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Profile -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Profile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#ProfileSet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#ProfileSet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/opm#Property -->
+
+
+    <owl:Class rdf:about="https://w3id.org/opm#Property"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Aluminium -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Aluminium">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Bitumen -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Bitumen">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#CastIron -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#CastIron">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#CementStone -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#CementStone">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Ceramic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Ceramic">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Concrete -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Concrete">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Copper -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Copper">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Glass -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Glass">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Masonry -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Masonry">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Polymer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Polymer">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Steel -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Steel">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/BuildingMaterials#Wood -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Wood">
+        <rdf:type rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
+            <rdf:Description rdf:about="https://w3id.org/opm#Property"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Constituent"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#ConstituentSet"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#LayerSet"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Profile"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#ProfileSet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasDefinedValue"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasEstimatedValue"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#hasMeasuredValue"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
