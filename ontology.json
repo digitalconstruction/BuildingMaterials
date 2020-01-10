@@ -9,7 +9,7 @@
     }, {
       "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"
     }, {
-      "@id" : "https://w3id.org/opm#Property"
+      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
     } ]
   } ]
 }, {
@@ -72,7 +72,13 @@
   "@id" : "http://purl.org/dc/elements/1.1/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
@@ -107,8 +113,12 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "Building Material Ontology defines the main concepts of building material, types, layers, and properties"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2019-12-10T16:00:00"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)"
@@ -117,11 +127,14 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "The Building Material Ontology defining the main concepts of building material, type and its properties. This ontology developed by taking advantage of Ontology Property Management (OPM) concepts."
+    "@value" : "The Building Material Ontology defines the main concepts of building material, types, layers, and properties"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2019-12-10T16:00:00"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -290,7 +303,7 @@
     "@value" : "It is a characterstic of a material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty",
@@ -332,6 +345,9 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Steel",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial" ]
 }, {
@@ -356,7 +372,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasAlkalinityConcentration",
@@ -368,7 +384,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasBoilingPoint",
@@ -380,7 +396,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasCO2Content",
@@ -392,7 +408,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasCOContent",
@@ -404,7 +420,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasCarbonContent",
@@ -419,7 +435,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasCombustionTemperature",
@@ -434,7 +450,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasConstituents",
@@ -448,7 +464,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasDefinedValue",
@@ -457,7 +473,7 @@
     "@value" : "Defined value is the standard value taken from the authenticated sources. For example, it is a value taken from the standards."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -478,7 +494,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasEstimatedValue",
@@ -487,7 +503,7 @@
     "@value" : "Estimated value is the derived value or calculated value by using other property values"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -505,7 +521,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasGasPressure",
@@ -520,7 +536,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasHardness",
@@ -535,7 +551,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasHigherHeatingValue",
@@ -550,7 +566,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasIsothermalMoistureCapacity",
@@ -565,7 +581,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasLayers",
@@ -589,7 +605,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialFuelProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasLowerVaporResistanceFactor",
@@ -604,7 +620,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasMassDensity",
@@ -619,7 +635,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasMaterial",
@@ -649,7 +665,7 @@
     "@value" : "Measured Value is the resulted value from the measurement process"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -670,7 +686,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasMoistureDiffusivity",
@@ -685,7 +701,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasMolecularWeight",
@@ -697,7 +713,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasN20Content",
@@ -709,7 +725,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialCombustionProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasPHLevel",
@@ -724,7 +740,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasPoissonRatio",
@@ -739,7 +755,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasPorosity",
@@ -751,7 +767,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialPhysicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProfiles",
@@ -763,13 +779,19 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Profile"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasReference",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "hasRefrence: is used to represent the relation between property and the source from where it is taken."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -793,7 +815,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceBack",
@@ -808,7 +830,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarReflectanceFront",
@@ -823,7 +845,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarRefractionIndex",
@@ -838,7 +860,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSolarTransmittance",
@@ -853,7 +875,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatCapacity",
@@ -865,7 +887,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasSpecificHeatTemperatureDerivative",
@@ -880,7 +902,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalCapacity",
@@ -889,7 +911,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivity",
@@ -901,7 +923,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalConductivityTemperatureDerivative",
@@ -916,7 +938,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalExpansionCoefficient",
@@ -931,7 +953,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityBack",
@@ -946,7 +968,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrEmissivityFront",
@@ -961,7 +983,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalIrTransmittance",
@@ -976,7 +998,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThermalResistivity",
@@ -985,7 +1007,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialThermalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasThickness",
@@ -1000,13 +1022,10 @@
     "@value" : "It is used to assign the unit to the property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://qudt.org/schema/qudt/Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasUpperVaporResistanceFactor",
@@ -1021,13 +1040,13 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/opm#Property"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -1048,7 +1067,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialHygroscopicProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasViscosityTemperatureDerivative",
@@ -1063,7 +1082,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceBack",
@@ -1078,7 +1097,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleReflectanceFront",
@@ -1093,7 +1112,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleRefractionIndex",
@@ -1108,7 +1127,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialEnergyProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasVisibleTransmittance",
@@ -1123,7 +1142,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialOpticalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasYoungModulus",
@@ -1138,12 +1157,6 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialMechanicalProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/opm#hasProperty"
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#hasProperty"
   } ]
-}, {
-  "@id" : "https://w3id.org/opm#Property",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/opm#hasProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
