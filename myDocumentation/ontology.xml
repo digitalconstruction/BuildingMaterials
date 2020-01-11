@@ -2,14 +2,17 @@
 <rdf:RDF xmlns="https://w3id.org/digitalconstruction/BuildingMaterials#"
      xml:base="https://w3id.org/digitalconstruction/BuildingMaterials"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials">
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities#"/>
         <terms:abstract>Building Material Ontology defines the main concepts of building material, types, layers, and properties</terms:abstract>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-10T16:00:00</terms:created>
         <terms:creator>Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)</terms:creator>
@@ -140,7 +143,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#IsInnerLayerOf">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
     </owl:ObjectProperty>
     
 
@@ -150,7 +153,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#IsOuterLayerOf">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#Layer"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
     </owl:ObjectProperty>
     
 
@@ -877,13 +880,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement -->
-
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
-    
-
-
     <!-- https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial -->
 
 
@@ -942,6 +938,7 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material">
+        <owl:disjointWith rdf:resource="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
         <rdfs:comment>a homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). [ISO 16739]</rdfs:comment>
     </owl:Class>
     
@@ -1233,14 +1230,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
             <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
             <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialType"/>
             <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Property"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#Material"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

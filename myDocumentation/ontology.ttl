@@ -7,6 +7,7 @@
 @base <https://w3id.org/digitalconstruction/BuildingMaterials> .
 
 <https://w3id.org/digitalconstruction/BuildingMaterials> rdf:type owl:Ontology ;
+                                                          owl:imports <https://w3id.org/digitalconstruction/Entities#> ;
                                                           <http://purl.org/dc/terms/abstract> "Building Material Ontology defines the main concepts of building material, types, layers, and properties" ;
                                                           <http://purl.org/dc/terms/created> "2019-12-10T16:00:00"^^xsd:dateTime ;
                                                           <http://purl.org/dc/terms/creator> "Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)" ,
@@ -80,13 +81,13 @@
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#IsInnerLayerOf
 :IsInnerLayerOf rdf:type owl:ObjectProperty ;
                 rdfs:domain :Layer ;
-                rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement> .
+                rdfs:range <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
 
 
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#IsOuterLayerOf
 :IsOuterLayerOf rdf:type owl:ObjectProperty ;
                 rdfs:domain :Layer ;
-                rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement> .
+                rdfs:range <https://w3id.org/digitalconstruction/Entities#BuildingObject> .
 
 
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#adjacentLayer
@@ -552,10 +553,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
 <http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
 
 
-###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement
-<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement> rdf:type owl:Class .
-
-
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial
 :CompositeMaterial rdf:type owl:Class ;
                    rdfs:subClassOf :MaterialType .
@@ -588,6 +585,7 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
 
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#Material
 :Material rdf:type owl:Class ;
+          owl:disjointWith :MaterialDefinition ;
           rdfs:comment "a homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). [ISO 16739]" .
 
 
@@ -748,14 +746,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
                 :Material
                 :MaterialType
                 :Property
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement>
-                :Material
-                :MaterialDefinition
               )
 ] .
 

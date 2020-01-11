@@ -13,21 +13,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"
-    }, {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -45,7 +31,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -61,11 +47,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"
+      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial"
     }, {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Material"
+      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#InorganicNonMetallicMaterial"
     }, {
-      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"
+      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MetallicMaterial"
+    }, {
+      "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#OrganicaMaterial"
     } ]
   } ]
 }, {
@@ -106,9 +94,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/Unit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials",
@@ -153,6 +138,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/digitalconstruction"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -213,7 +201,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Layer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#IsOuterLayerOf",
@@ -222,7 +210,7 @@
     "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Layer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElement"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#Layer",
@@ -244,6 +232,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "a homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). [ISO 16739]"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialDefinition"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/BuildingMaterials#MaterialChemicalProperty",
