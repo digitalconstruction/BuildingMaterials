@@ -2,12 +2,10 @@
 <rdf:RDF xmlns="https://w3id.org/digitalconstruction/BuildingMaterials#"
      xml:base="https://w3id.org/digitalconstruction/BuildingMaterials"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
@@ -49,24 +47,10 @@
     
 
 
-    <!-- http://purl.org/dc/terms/abstract -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
-    
-
-
     <!-- http://purl.org/dc/terms/contributor -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -870,13 +854,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
      -->
 
 
-    
-
-
-    <!-- http://qudt.org/schema/qudt/Unit -->
-
-
-    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit"/>
     
 
 

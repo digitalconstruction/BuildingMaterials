@@ -25,14 +25,8 @@
 # http://purl.org/dc/elements/1.1/license
 <http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -370,7 +364,6 @@
 <https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/BuildingMaterials#Property> .
 <https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/Unit> .
-<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/BuildingMaterials#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "It is used to assign the unit to the property" .
 # 
 # https://w3id.org/digitalconstruction/BuildingMaterials#hasUpperVaporResistanceFactor
@@ -485,8 +478,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://qudt.org/schema/qudt/Unit
 # 
 # https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial
 <https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -30,16 +30,8 @@
 <http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -548,10 +540,6 @@ Moisture diffusivity is a transport property that is frequently used in the hygr
 #################################################################
 #    Classes
 #################################################################
-
-###  http://qudt.org/schema/qudt/Unit
-<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
-
 
 ###  https://w3id.org/digitalconstruction/BuildingMaterials#CompositeMaterial
 :CompositeMaterial rdf:type owl:Class ;
