@@ -2,7 +2,7 @@
 
 <h3>DICBM Overview</h3>
 
-<p> The DICBM ontology contains required set of vocabulary and axioms to represent the construction and material data of the building elements. The overview of DICBM ontology shown in the figure below. The main classes defined in the ontology are dicbm:Material, dicbm:MaterialDefinition, dicbm:MaterialType.
+<p> The DICBM ontology contains the required set of vocabulary and axioms to represent construction and material data of building elements. An overview of the DICBM ontology is shown in the figure below. The main classes defined in the ontology are <tt>dicbm:Material</tt>, <tt>dicbm:MaterialDefinition</tt>, and <tt>dicbm:MaterialType</tt>.
 </p>
 
 <center>
@@ -11,7 +11,7 @@
 
 <h3>Material Definition in DICBM</h3>
 
-<p>The material data needs to be assigned to building elements on different levels. For example, in IFC material properties are assigned to layer, profile, and constit-uent. This feature is defined explicitly by grouping using the concept called Material-Definition in BMO. bmo:MaterialDefinition is a concept to represent material related information classes that have material related properties. Material Definition closely represents the entity IfcMaterialDefinition in IFC. bmo:MaterialDefinition has the fol-lowing subclasses bmo:Layer, bmo:LayerSet, bmo:Profile, bmo:ProfileSet, bmo:Con-stituent, and bmo:ConstituentSet. The diagram below shows the subclasses of dicbm:MaterialDefinition.  </p>
+<p>The material data needs to be assigned to building elements on different levels. For example, in IFC material properties are assigned to layer, profile, and constituent. This feature is in DICBM defined explicitly by grouping using a concept called Material-Definition. <tt>dicbm:MaterialDefinition</tt> is a concept to represent material related information classes that have material related properties. Material Definition closely represents the entity <tt>IfcMaterialDefinition</tt> in IFC. <tt>dicbm:MaterialDefinition</tt> has the following subclasses: <tt>dicbm:Layer</tt>, <tt>dicbm:LayerSet</tt>, <tt>dicbm:Profile</tt>, <tt>dicbm:ProfileSet</tt>, <tt>dicbm:Constituent</tt>, <tt>and dicbm:ConstituentSet</tt>. The diagram below shows the subclasses of <tt>dicbm:MaterialDefinition</tt>.  </p>
 
 <center>
 <img width="40%" src="sections/bm-material-definition.png">
@@ -19,17 +19,17 @@
 
 <h3>Construction Layer Definition in DICBM</h3>
 
-<p> Building elements (e.g. wall, roof, etc.) may consist of one or more layers. These layers’ information for a specific building element is grouped using the LayerSet concept of the IFC schema. This grouping mechanism automatically separates the repetitive definition of similar layer information in different parts. For in-stance, a wall might contain layers with a material “x” and a thickness “y”. Similarly, another wall might have a layer with the same material but different thickness. So, the LayerSet approach separates both the layers with its own identity, either by name or URI. Furthermore, the concept of LayerSet enables the definition of one single set for a distinct layer to n number of walls (or other elements) based on its category. Thus, the dicbm:LayerSet is a class to represent a set of layers and their assignment to materials of an element constructed from several material layers. Additionally, the relative positioning of individual layers can be expressed. This class more or less represents the concept of IfcLayerSet in the IFC data model. Similarly, relation between the construction details are defined. Figure below represents the layers information and its relation with other elements.
+<p> Building elements (e.g. wall, roof, etc.) may consist of one or more layers of material. These layers’ information for a specific building element is grouped using the <tt>LayerSet</tt> concept of the IFC schema. This grouping mechanism automatically separates the repetitive definition of similar layer information in different parts. For instance, a wall might contain layers with a material “x” and a thickness “y”. Similarly, another wall might have a layer with the same material but different thickness. So, the LayerSet approach separates both the layers with its own identity, either by name or URI. Furthermore, the concept of LayerSet enables the definition of one single set for a distinct layer to n number of walls (or other elements) based on its category. Thus, the dicbm:LayerSet is a class to represent a set of layers and their assignment to materials of an element constructed from several material layers. Additionally, the relative positioning of individual layers can be expressed. This class more or less represents the concept of <tt>LayerSet</tt> in the IFC data model. Similarly, the relation between the construction details are defined. The figure below represents the layers’ information and their relation with other elements.
 </p>
 
 <center>
-<img width="40%" src="sections/bm-construction-details.png">
+<img width="60%" src="sections/bm-construction-details.png">
 </center>
 
 <h3>Material, Type, Property in DICBM</h3>
 
 <p>
-One can distinguish into homogeneous or inhomogeneous material, which can be used to form building products. The calss dicbm:Material is used to represent material.  Building materials are categorized into four types. These are: (i) composite material, (ii) metallic material, (iii) inorganicNonMetallicMaterial, and (iv) organicMaterial. The common terminology used to define these types is material type. Therefore, dicbm:MaterialType is a concept that will have four subclasses of material type; such as the Classes dicbm:CompositeMaterial, dicbm:InorganicNonMetallicMaterial, dicbm:MetallicMaterial, and dicbm:OrganicMaterial. These concepts are disjoint from each other. Organic materials have limited temperature resistance and the properties highly depend on temperature (e.g. wood, bitumen). Metallic materials have high strength in corro-sion, ductile, brittle, and formable (e.g. steel, cast iron). Inorganic non-metallic materi-als have high strength in compression, durability, and brittle (e.g. natural stones, ceramics, and glass). Composite materials are made up of one or more constituents. The properties of these materials may vary based on the composition (e.g. reinforced concrete). Material property is a characteristic of a material and represented using the class dicbm:MaterialProperty. It holds the data related to different properties of a material. Figure below represents the material, type, and properties in the ontology.
+One can distinguish into homogeneous or inhomogeneous material, which can be used to form building products. The calss dicbm:Material is used to represent material. Building materials are categorized into four types. These are: (i) composite material, (ii) metallic material, (iii) inorganicNonMetallicMaterial, and (iv) organicMaterial. The common terminology used to define these types is material type. Therefore, <tt>dicbm:MaterialType</tt> is a concept that will have four subclasses of material type; such as the Classes <tt>dicbm:CompositeMaterial</tt>, <tt>dicbm:InorganicNonMetallicMaterial</tt>, <tt>dicbm:MetallicMaterial</tt>, and <tt>dicbm:OrganicMaterial</tt>. These concepts are disjoint from each other. Organic materials have limited temperature resistance and the properties highly depend on temperature (e.g. wood, bitumen). Metallic materials have high strength in corrosion, ductile, brittle, and formable (e.g. steel, cast iron). Inorganic non-metallic materials have high strength in compression, durability, and brittle (e.g. natural stones, ceramics, and glass). Composite materials are made up of one or more constituents. The properties of these materials may vary based on the composition (e.g. reinforced concrete). Material property is a characteristic of a material and represented using the class <tt>dicbm:MaterialProperty</tt>. It holds the data related to different properties of a material. The figure below represents the material, type, and properties in the ontology.
 </p>
 
 <center>
@@ -39,7 +39,7 @@ One can distinguish into homogeneous or inhomogeneous material, which can be use
 <h3>Data Properties in DICBM</h3>
 
 <p>
-Data property is used to connect individuals with literals. The data properties dicbm:Name, dicbm:hasReference, dicbm:hasValue are three major properties modelled in the ontology. The name of the object and properties are represented using the data property dicbm:Name. The property with its authenticated resource are connected using the data property dicbm:hasReference. The property dicbm:hasValue is used to describe the simple, measure, and defined quantity of the property of an object. Figure below shows the data properties used in the ontology.
+Data property is used to connect individuals with literals. The data properties <tt>dicbm:Name</tt>, <tt>dicbm:hasReference</tt>, <tt>dicbm:hasValue</tt> are three major properties modelled in the ontology. The name of the object and properties are represented using the data property <tt>dicbm:Name</tt>. The property with its authenticated resource are connected using the data property <tt>dicbm:hasReference</tt>. The property <tt>dicbm:hasValue</tt> is used to describe the simple, measure, and defined quantity of the property of an object. The figure below shows the data properties used in the ontology.
 </p>
 
 <center>
